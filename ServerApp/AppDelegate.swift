@@ -13,6 +13,52 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
+        
+        if url.host == nil
+        {
+            return true;
+        }
+        
+        let urlString = url.absoluteString
+        let queryArray = urlString.componentsSeparatedByString("/")
+        let query = queryArray[2]
+        
+        print("Query: " + query)
+        
+        // Check if article
+        if query.rangeOfString("article") != nil
+        {
+            let data = urlString.componentsSeparatedByString("/")
+            if data.count >= 3
+            {
+                let parameter = data[3]
+                print(parameter)
+//                let userInfo = [RemoteNotificationDeepLinkAppSectionKey : parameter ]
+//                self.applicationHandleRemoteNotification(application, didReceiveRemoteNotification: userInfo)
+            }
+        }
+        
+        return true
+
+    }
+    
+    
+    func applicationHandleRemoteNotification(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject])
+    {
+        if application.applicationState == UIApplicationState.Background || application.applicationState == UIApplicationState.Inactive
+        {
+//            var canDoNow = loadedEnoughToDeepLink
+            
+//            self.deepLink = RemoteNotificationDeepLink.create(userInfo)
+            
+//            if canDoNow
+//            {
+//                self.triggerDeepLinkIfPresent()
+//            }
+        }
+    }
+    
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
