@@ -12,9 +12,13 @@
 		D941707D1CCD5E3A00A7676C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D941707B1CCD5E3A00A7676C /* Main.storyboard */; };
 		D941707F1CCD5E3A00A7676C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D941707E1CCD5E3A00A7676C /* Assets.xcassets */; };
 		D94170821CCD5E3A00A7676C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D94170801CCD5E3A00A7676C /* LaunchScreen.storyboard */; };
+		D94170AA1CCFC34200A7676C /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = D94170A91CCFC34200A7676C /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20CDF2E82288F5BB26989B1E /* Pods_ServerApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ServerApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34AF62842A4370DC7E4D539A /* Pods-ServerApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ServerApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ServerApp/Pods-ServerApp.release.xcconfig"; sourceTree = "<group>"; };
+		78EEFE54018D824EEFB9DCD8 /* Pods-ServerApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ServerApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ServerApp/Pods-ServerApp.debug.xcconfig"; sourceTree = "<group>"; };
 		D94170741CCD5E3A00A7676C /* ServerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ServerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D94170771CCD5E3A00A7676C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D94170791CCD5E3A00A7676C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,7 @@
 		D941707E1CCD5E3A00A7676C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D94170811CCD5E3A00A7676C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D94170831CCD5E3A00A7676C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D94170A91CCFC34200A7676C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,11 +40,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42A5934183B5918F7CDC7D90 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20CDF2E82288F5BB26989B1E /* Pods_ServerApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D941706B1CCD5E3A00A7676C = {
 			isa = PBXGroup;
 			children = (
 				D94170761CCD5E3A00A7676C /* ServerApp */,
 				D94170751CCD5E3A00A7676C /* Products */,
+				EE4BBE697D67A67387A44F8E /* Pods */,
+				42A5934183B5918F7CDC7D90 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +75,18 @@
 				D941707E1CCD5E3A00A7676C /* Assets.xcassets */,
 				D94170801CCD5E3A00A7676C /* LaunchScreen.storyboard */,
 				D94170831CCD5E3A00A7676C /* Info.plist */,
+				D94170A91CCFC34200A7676C /* README.md */,
 			);
 			path = ServerApp;
+			sourceTree = "<group>";
+		};
+		EE4BBE697D67A67387A44F8E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				78EEFE54018D824EEFB9DCD8 /* Pods-ServerApp.debug.xcconfig */,
+				34AF62842A4370DC7E4D539A /* Pods-ServerApp.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D94170AA1CCFC34200A7676C /* README.md in Sources */,
 				D941707A1CCD5E3A00A7676C /* ViewController.swift in Sources */,
 				D94170781CCD5E3A00A7676C /* AppDelegate.swift in Sources */,
 			);
@@ -288,6 +314,7 @@
 				D94170881CCD5E3A00A7676C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

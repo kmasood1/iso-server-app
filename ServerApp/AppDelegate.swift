@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let queryArray = urlString.componentsSeparatedByString("/")
         let query = queryArray[2]
         
-        print("Query: " + query)
+        print("Query: " + urlString)
         
         // Check if article
         if query.rangeOfString("article") != nil
