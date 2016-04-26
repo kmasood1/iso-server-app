@@ -12,7 +12,6 @@
 		D941707D1CCD5E3A00A7676C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D941707B1CCD5E3A00A7676C /* Main.storyboard */; };
 		D941707F1CCD5E3A00A7676C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D941707E1CCD5E3A00A7676C /* Assets.xcassets */; };
 		D94170821CCD5E3A00A7676C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D94170801CCD5E3A00A7676C /* LaunchScreen.storyboard */; };
-		D94170AA1CCFC34200A7676C /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = D94170A91CCFC34200A7676C /* README.md */; };
 		D94170AC1CCFC3AA00A7676C /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = D94170AB1CCFC3AA00A7676C /* README.md */; };
 /* End PBXBuildFile section */
 
@@ -27,7 +26,6 @@
 		D941707E1CCD5E3A00A7676C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D94170811CCD5E3A00A7676C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D94170831CCD5E3A00A7676C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D94170A91CCFC34200A7676C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D94170AB1CCFC3AA00A7676C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,7 +76,6 @@
 				D941707E1CCD5E3A00A7676C /* Assets.xcassets */,
 				D94170801CCD5E3A00A7676C /* LaunchScreen.storyboard */,
 				D94170831CCD5E3A00A7676C /* Info.plist */,
-				D94170A91CCFC34200A7676C /* README.md */,
 			);
 			path = ServerApp;
 			sourceTree = "<group>";
@@ -163,7 +160,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D94170AA1CCFC34200A7676C /* README.md in Sources */,
 				D941707A1CCD5E3A00A7676C /* ViewController.swift in Sources */,
 				D94170AC1CCFC3AA00A7676C /* README.md in Sources */,
 				D94170781CCD5E3A00A7676C /* AppDelegate.swift in Sources */,
